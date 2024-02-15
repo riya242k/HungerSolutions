@@ -1,0 +1,100 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SharedFiles\Images\avatar.png" />
+    <None Remove="SharedFiles\Images\Logo.png" />
+    <None Remove="SharedFiles\Images\LogoBG.png" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R1 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R1 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R1 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R1 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R1 e.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R2 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R2 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R2 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R2 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R2 e.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R3 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R3 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R3 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R3 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R3 e.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R4 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R4 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R4 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R4 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R4 e.jpeg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R5 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R5 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R5 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R5 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R6 a.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R6 b.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R6 c.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R6 d.jpg" />
+    <None Remove="SharedFiles\Images\Menu_Item_Images\R6 e.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\Gladiator.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\Northern Thai Restaurant.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\Papa johns pizza.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\Pizza depot.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\Shawarma.jpg" />
+    <None Remove="SharedFiles\Images\Restaurant_Images\THE LANCASTER SMOKEHOUSE.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Profile\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SharedFiles\Images\avatar.png" />
+    <Resource Include="SharedFiles\Images\Logo.png" />
+    <Resource Include="SharedFiles\Images\LogoBG.png" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R1 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R1 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R1 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R1 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R1 e.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R2 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R2 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R2 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R2 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R2 e.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R3 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R3 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R3 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R3 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R3 e.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R4 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R4 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R4 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R4 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R4 e.jpeg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R5 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R5 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R5 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R5 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R6 a.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R6 b.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R6 c.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R6 d.jpg" />
+    <Resource Include="SharedFiles\Images\Menu_Item_Images\R6 e.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\Gladiator.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\Northern Thai Restaurant.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\Papa johns pizza.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\Pizza depot.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\Shawarma.jpg" />
+    <Resource Include="SharedFiles\Images\Restaurant_Images\THE LANCASTER SMOKEHOUSE.jpg" />
+  </ItemGroup>
+
+</Project>
