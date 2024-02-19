@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using HungerSolutions;
+using HungerSolutions.Profile.Models;
+using HungerSolutions.Restaurant.Models;
+using NUnit.Framework;
+using static NUnit.Framework.Constraints.Tolerance;
+
+namespace HungerSolutionsTest
+{
+    public class TestProgram
+    {
+        [TestFixture]
+        public class RestaurantHomePageTest
+        {
+            [Test]
+            public async void LoadRestaurantHomePage_userEmailId_OutputListOfRestaurant()
+            {
+                //Arrange
+                string userEmailId = "testUserEmail@gmail.com";
+
+                //Act
+                //Homepage constructor
+                HungerSolutions.Restaurant.Views.RestaurantIndexPage restaurantIndexPage = new(userEmailId);
+                // Homepage onload method. Returns 0 if execution is successful.
+                int output = await restaurantIndexPage.WindowOnLoad();
+
+                //Assert
+                Assert.Equals(0, output);
+            }
+
+        }
+
+        [TestFixture]
+        public class DBQueriesTest
+        {
+            [Test]
+            public void ValidateLoginCredentialsTest()
+            {
+                // Arrange
+                UserModel userLoginInput = new UserModel()
+                {
+                    emailAddress = "testEmail@gmail.com",
+                    password = "pass123"
+                };
+
+
+                //Act
+                //DBQueries ValidateLoginCredentials Method. Returns true if login info is valid.
+                HungerSolutions.Database.DatabaseQueries dbQueries = new();
+                bool output = dbQueries.ValidateLoginCredentials(userLoginInput);
+
+                //Assert
+                Assert.Equals(true, output);
+            }
+
+            [Test]
+            public void GetUserAccountDetailsTest()
+            {
+                // Arrange
+                string emailAddress = "testEmail@gmail.com";
+
+                //Act
+                //DBQueries GetUserAccountDetails Method. Returns Usermodel with user data based on email.
+                HungerSolutions.Database.DatabaseQueries dbQueries = new();
+                UserModel output = dbQueries.GetUserAccountDetails(emailAddress);
+
+                //Assert
+                Assert.Equals(true, output!=null);
+                Assert.Equals("Test Account", output.username);
+                Assert.Equals("123456789", output.phone);
+
+            }
+
+            [Test]
+            public async void GetRestaurants_All_Or_BySearchTest()
+            {
+                // Arrange
+
+                //Act
+                //DBQueries GetUserAccountDetails Method. Returns Usermodel with user data based on email.
+                HungerSolutions.Database.DatabaseQueries dbQueries = new();
+                List<RestaurantModel> output = await dbQueries.GetRestaurants_All_Or_BySearch("Generic");
+
+                //Assert
+                Assert.Equals(true, output != null);
+            }
+        }
+    }
+}
